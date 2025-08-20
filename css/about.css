@@ -1,0 +1,124 @@
+/* About Section Styles - Starry Black & Yellow Theme */
+.about {
+	padding: 100px 0;
+	background: var(--bg-1);
+	position: relative;
+}
+
+.about::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: 
+		radial-gradient(1px 1px at 50px 50px, var(--primary), transparent),
+		radial-gradient(1px 1px at 150px 150px, var(--primary-2), transparent),
+		radial-gradient(1px 1px at 250px 50px, var(--primary), transparent);
+	background-repeat: repeat;
+	background-size: 300px 300px;
+	animation: twinkle 6s ease-in-out infinite;
+	opacity: 0.3;
+}
+
+.about-content {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 4rem;
+	align-items: start;
+	position: relative;
+	z-index: 2;
+}
+
+.about-text {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.about-item {
+	padding: 2rem;
+	background: rgba(var(--primary-rgb), 0.05);
+	border-radius: 15px;
+	border-left: 4px solid var(--primary);
+	transition: transform 0.3s ease;
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(var(--primary-rgb), 0.1);
+}
+
+.about-item:hover {
+	transform: translateY(-5px);
+	background: rgba(var(--primary-rgb), 0.1);
+	box-shadow: 0 10px 30px rgba(var(--primary-rgb), 0.2);
+}
+
+.about-item h3 {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-size: 1.3rem;
+	font-weight: 600;
+	color: var(--primary);
+	margin-bottom: 1rem;
+}
+
+.about-item h3 i {
+	color: var(--primary);
+	font-size: 1.5rem;
+}
+
+.about-item p {
+	color: var(--text-muted);
+	line-height: 1.8;
+}
+
+.about-stats {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 2rem;
+}
+
+.stat-item {
+	text-align: center;
+	padding: 2rem;
+	background: linear-gradient(135deg, var(--primary), var(--primary-2));
+	color: var(--primary-contrast);
+	border-radius: 15px;
+	transition: transform 0.3s ease;
+	box-shadow: 0 10px 25px rgba(var(--primary-rgb), 0.3);
+}
+
+.stat-item:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 15px 35px rgba(var(--primary-rgb), 0.4);
+}
+
+.stat-item h3 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+	font-size: 1rem;
+	opacity: 0.8;
+}
+
+/* Responsive About */
+@media (max-width: 768px) {
+	.about-content {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.about-stats {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media (max-width: 480px) {
+	.about-stats {
+		grid-template-columns: 1fr;
+	}
+} 

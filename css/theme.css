@@ -1,0 +1,149 @@
+/* Theme Variables */
+:root {
+	--bg-0: #000000;
+	--bg-1: #111111;
+	--bg-2: #1a1a1a;
+	--text: #ffffff;
+	--text-muted: rgba(255, 255, 255, 0.8);
+	--primary: #ffd700;
+	--primary-2: #ffed4e;
+	--primary-contrast: #000000;
+	--primary-rgb: 255, 215, 0;
+	--white-rgb: 255, 255, 255;
+	--black-rgb: 0, 0, 0;
+}
+
+/* Ocean (Cyan/Teal) */
+:root[data-theme="ocean"] {
+	--bg-0: #0b1020;
+	--bg-1: #11172a;
+	--bg-2: #0f1a3a;
+	--text: #e6f1ff;
+	--text-muted: rgba(230, 241, 255, 0.8);
+	--primary: #00bcd4;
+	--primary-2: #42e3ff;
+	--primary-contrast: #001018;
+	--primary-rgb: 0, 188, 212;
+	--white-rgb: 230, 241, 255;
+	--black-rgb: 11, 16, 32;
+}
+
+/* Rose (Pink/Red) */
+:root[data-theme="rose"] {
+	--bg-0: #140a0f;
+	--bg-1: #1b0f16;
+	--bg-2: #2a1420;
+	--text: #ffe9f2;
+	--text-muted: rgba(255, 233, 242, 0.85);
+	--primary: #ff4d6d;
+	--primary-2: #ff94a8;
+	--primary-contrast: #2a0b16;
+	--primary-rgb: 255, 77, 109;
+	--white-rgb: 255, 233, 242;
+	--black-rgb: 20, 10, 15;
+}
+
+/* Forest (Green) */
+:root[data-theme="forest"] {
+	--bg-0: #0b130e;
+	--bg-1: #111d16;
+	--bg-2: #15271c;
+	--text: #e9ffe9;
+	--text-muted: rgba(233, 255, 233, 0.85);
+	--primary: #34d399;
+	--primary-2: #6ee7b7;
+	--primary-contrast: #062814;
+	--primary-rgb: 52, 211, 153;
+	--white-rgb: 233, 255, 233;
+	--black-rgb: 11, 19, 14;
+}
+
+/* Purple (Violet) */
+:root[data-theme="purple"] {
+	--bg-0: #0f0b1a;
+	--bg-1: #140f22;
+	--bg-2: #1e1633;
+	--text: #efe9ff;
+	--text-muted: rgba(239, 233, 255, 0.85);
+	--primary: #8b5cf6;
+	--primary-2: #a78bfa;
+	--primary-contrast: #160a33;
+	--primary-rgb: 139, 92, 246;
+	--white-rgb: 239, 233, 255;
+	--black-rgb: 15, 11, 26;
+}
+
+/* Light (Blue) */
+:root[data-theme="light"] {
+	--bg-0: #f7f9fc;
+	--bg-1: #ffffff;
+	--bg-2: #eef2f7;
+	--text: #1d2433;
+	--text-muted: rgba(29, 36, 51, 0.7);
+	--primary: #2563eb;
+	--primary-2: #60a5fa;
+	--primary-contrast: #ffffff;
+	--primary-rgb: 37, 99, 235;
+	--white-rgb: 255, 255, 255;
+	--black-rgb: 29, 36, 51;
+}
+
+/* Light (Teal) */
+:root[data-theme="light-teal"] {
+	--bg-0: #f7f9fc;
+	--bg-1: #ffffff;
+	--bg-2: #eef2f7;
+	--text: #1d2433;
+	--text-muted: rgba(29, 36, 51, 0.7);
+	--primary: #14b8a6;
+	--primary-2: #5eead4;
+	--primary-contrast: #ffffff;
+	--primary-rgb: 20, 184, 166;
+	--white-rgb: 255, 255, 255;
+	--black-rgb: 29, 36, 51;
+}
+
+/* Light (Rose) */
+:root[data-theme="light-rose"] {
+	--bg-0: #f7f9fc;
+	--bg-1: #ffffff;
+	--bg-2: #eef2f7;
+	--text: #1d2433;
+	--text-muted: rgba(29, 36, 51, 0.7);
+	--primary: #e11d48;
+	--primary-2: #fb7185;
+	--primary-contrast: #ffffff;
+	--primary-rgb: 225, 29, 72;
+	--white-rgb: 255, 255, 255;
+	--black-rgb: 29, 36, 51;
+}
+
+/* Light (Amber) */
+:root[data-theme="light-amber"] {
+	--bg-0: #f7f9fc;
+	--bg-1: #ffffff;
+	--bg-2: #eef2f7;
+	--text: #1d2433;
+	--text-muted: rgba(29, 36, 51, 0.7);
+	--primary: #f59e0b;
+	--primary-2: #fbbf24;
+	--primary-contrast: #ffffff;
+	--primary-rgb: 245, 158, 11;
+	--white-rgb: 255, 255, 255;
+	--black-rgb: 29, 36, 51;
+}
+
+/* Light (Purple) */
+:root[data-theme="light-purple"] {
+	--bg-0: #f7f9fc;
+	--bg-1: #ffffff;
+	--bg-2: #eef2f7;
+	--text: #1d2433;
+	--text-muted: rgba(29, 36, 51, 0.7);
+	--primary: #7c3aed;
+	--primary-2: #a78bfa;
+	--primary-contrast: #ffffff;
+	--primary-rgb: 124, 58, 237;
+	--white-rgb: 255, 255, 255;
+	--black-rgb: 29, 36, 51;
+} 

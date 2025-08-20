@@ -1,0 +1,228 @@
+/* Navigation Styles - Starry Black & Yellow Theme */
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: rgba(var(--black-rgb), 0.9);
+	backdrop-filter: blur(20px);
+	border-bottom: 1px solid rgba(var(--primary-rgb), 0.3);
+	z-index: 1000;
+	transition: all 0.3s ease;
+	box-shadow: 0 8px 32px rgba(var(--black-rgb), 0.5);
+}
+
+.navbar.scrolled {
+	background: rgba(var(--black-rgb), 0.95);
+	backdrop-filter: blur(20px);
+	border-bottom: 1px solid rgba(var(--primary-rgb), 0.5);
+}
+
+.nav-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+}
+
+.nav-logo h2 {
+	background: linear-gradient(135deg, var(--primary), var(--primary-2), var(--primary));
+	background-size: 200% 200%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	font-weight: 700;
+	font-size: 1.8rem;
+	animation: gradientShift 3s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+	0%, 100% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+}
+
+.nav-menu {
+	display: flex;
+	list-style: none;
+	gap: 2rem;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: var(--primary);
+	font-weight: 500;
+	transition: all 0.3s ease;
+	position: relative;
+	padding: 8px 16px;
+	border-radius: 25px;
+	background: rgba(var(--primary-rgb), 0.1);
+	backdrop-filter: blur(10px);
+}
+
+.nav-link:hover {
+	background: rgba(var(--primary-rgb), 0.2);
+	transform: translateY(-2px);
+	box-shadow: 0 5px 15px rgba(var(--primary-rgb), 0.3);
+	color: var(--text);
+}
+
+/* Theme switcher select (match nav buttons) */
+#theme-switcher {
+	appearance: none;
+	padding: 8px 36px 8px 16px;
+	border-radius: 25px;
+	border: 1px solid rgba(var(--primary-rgb), 0.2);
+	background: rgba(var(--primary-rgb), 0.1);
+	color: var(--primary);
+	cursor: pointer;
+	transition: all 0.2s ease;
+	backdrop-filter: blur(10px);
+}
+
+#theme-switcher:hover,
+#theme-switcher:focus {
+	background: rgba(var(--primary-rgb), 0.2);
+	outline: none;
+	border-color: rgba(var(--primary-rgb), 0.4);
+	color: var(--text);
+}
+
+/* Option text coloring */
+#theme-switcher option {
+	color: var(--text);
+	background-color: var(--bg-1);
+}
+
+/* Theme select wrapper to keep visible label while using native select */
+.theme-select {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	position: relative;
+}
+
+.theme-visible-label {
+	color: var(--text);
+	opacity: 0.9;
+	font-weight: 600;
+}
+
+/* Hide the displayed text of the select by making it transparent, but keep caret and width */
+#theme-switcher {
+	color: transparent;
+	text-shadow: 0 0 0 var(--primary);
+}
+
+/* When focused/hover, still keep the inline text visually as label; options remain normal */
+#theme-switcher:focus,
+#theme-switcher:hover {
+	color: transparent;
+	text-shadow: 0 0 0 var(--text);
+}
+
+/* Options should render with theme-readable colors */
+#theme-switcher option {
+	color: var(--text);
+	background-color: var(--bg-1);
+}
+
+.navbar.scrolled .nav-link {
+	color: var(--primary);
+	background: rgba(var(--primary-rgb), 0.1);
+}
+
+.navbar.scrolled .nav-link:hover {
+	background: rgba(var(--primary-rgb), 0.2);
+	color: var(--text);
+}
+
+.hamburger {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.bar {
+	width: 25px;
+	height: 3px;
+	background-color: var(--primary);
+	margin: 3px 0;
+	transition: 0.3s;
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+	.hamburger {
+		display: flex;
+	}
+
+	.nav-menu {
+		position: fixed;
+		left: -100%;
+		top: 70px;
+		flex-direction: column;
+		background-color: rgba(var(--black-rgb), 0.95);
+		width: 100%;
+		text-align: center;
+		transition: 0.3s;
+		box-shadow: 0 10px 27px rgba(var(--black-rgb), 0.3);
+		padding: 2rem 0;
+		border-top: 1px solid rgba(var(--primary-rgb), 0.3);
+	}
+
+	.nav-menu.active {
+		left: 0;
+	}
+
+	#theme-switcher {
+		margin: 0 auto;
+	}
+} 
+
+/* Persistent visible label on top of the select */
+.theme-select {
+	position: relative;
+	display: inline-block;
+}
+
+.theme-visible-label {
+	position: absolute;
+	left: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+	pointer-events: none;
+	color: inherit;
+	font-weight: 600;
+}
+
+.theme-select:hover .theme-visible-label,
+.theme-select:focus-within .theme-visible-label {
+	color: var(--text);
+}
+
+/* Ensure the theme label inherits the nav-link color */
+.theme-select {
+	color: var(--primary);
+}
+
+.navbar.scrolled .theme-select {
+	color: var(--primary);
+}
+
+.nav-link:hover + .theme-select .theme-visible-label {
+	color: var(--text);
+}
+
+/* Hide inline selected text; only show options when opened */
+#theme-switcher {
+	color: transparent !important;
+	text-shadow: none !important;
+}
+
+#theme-switcher:hover,
+#theme-switcher:focus {
+	color: transparent !important;
+	text-shadow: none !important;
+} 

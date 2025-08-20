@@ -1,0 +1,24 @@
+Home Page Section:
+Services We are Providing (Home Page)
+Check if Tagline and description is ok (Hero Section)
+Number of Projects Done, Clients handled and Success Rate.
+
+About Section:
+Vision, Mission and Core Values are Correct?
+Projects Completed, Clients Handled, Years of Experience & Availability
+
+Services Section:
+Check if description is Ok.
+Details about services we provide
+
+Portfolio Section:
+All the projects we have done soo far.
+
+Team Section:
+Name, Image, Role, Bio, LinkedIn profile Link, Upwork profile Link, WhatsApp of every team member.
+
+Reviews/Testimonials:
+Client Reviews
+
+Contact:
+Address, Phone, Email, Working Hours, Location
