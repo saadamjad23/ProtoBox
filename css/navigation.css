@@ -34,13 +34,14 @@
 }
 
 .logo-image {
-	height: 45px;
-	width: 45px;
-	border-radius: 50%;
+	height: 60px;
+	width: 60px;
+	border-radius: 100%;
 	object-fit: cover;
+	object-position: center;
 	transition: all 0.3s ease;
 	filter: drop-shadow(0 4px 8px rgba(var(--black-rgb), 0.3));
-	border: 2px solid rgba(var(--primary-rgb), 0.3);
+	border: 1px solid rgba(var(--primary-rgb), 0.3);
 }
 
 .logo-image:hover {
