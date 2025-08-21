@@ -27,15 +27,16 @@
 	height: 70px;
 }
 
-.nav-logo h2 {
-	background: linear-gradient(135deg, var(--secondary), var(--primary), var(--primary-2));
-	background-size: 200% 200%;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	font-weight: 700;
-	font-size: 1.8rem;
-	animation: gradientShift 3s ease-in-out infinite;
+.logo-image {
+	height: 50px;
+	width: auto;
+	transition: all 0.3s ease;
+	filter: drop-shadow(0 4px 8px rgba(var(--black-rgb), 0.3));
+}
+
+.logo-image:hover {
+	transform: scale(1.05);
+	filter: drop-shadow(0 6px 12px rgba(var(--primary-rgb), 0.4));
 }
 
 @keyframes gradientShift {

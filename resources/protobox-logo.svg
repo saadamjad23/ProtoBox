@@ -1,0 +1,22 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark gray circle background -->
+  <circle cx="100" cy="100" r="95" fill="#272727" stroke="#333" stroke-width="2"/>
+  
+  <!-- White cut-out from bottom -->
+  <rect x="20" y="140" width="60" height="40" fill="white"/>
+  
+  <!-- White cut-out from right -->
+  <rect x="160" y="60" width="40" height="30" fill="white"/>
+  
+  <!-- Large stylized P (periwinkle) -->
+  <path d="M 45 40 L 45 120 L 75 120 Q 95 120 95 100 Q 95 80 75 80 L 65 80 L 65 40 Z" fill="#99acff"/>
+  
+  <!-- Large stylized B (yellow) -->
+  <path d="M 70 40 L 70 120 L 100 120 Q 120 120 120 100 Q 120 80 100 80 L 90 80 L 90 40 Z" fill="#ffd21f"/>
+  
+  <!-- PROTOBOX text (white) -->
+  <text x="100" y="150" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">PROTOBOX</text>
+  
+  <!-- TECHNOLOGIES text (light green) -->
+  <text x="100" y="170" text-anchor="middle" fill="#90EE90" font-family="Arial, sans-serif" font-size="10" font-weight="bold">TECHNOLOGIES</text>
+</svg> 
