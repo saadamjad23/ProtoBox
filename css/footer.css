@@ -34,7 +34,7 @@
 
 .footer-section h3,
 .footer-section h4 {
-	color: var(--primary);
+	color: var(--heading);
 	margin-bottom: 1.5rem;
 	font-weight: 600;
 }
@@ -85,7 +85,7 @@
 }
 
 .footer-section ul li a:hover {
-	color: var(--primary);
+	color: var(--subheading);
 }
 
 .contact-info-footer p {
@@ -110,7 +110,7 @@
 }
 
 .footer-bottom i {
-	color: var(--primary);
+	color: var(--subheading);
 }
 
 /* Responsive Footer */

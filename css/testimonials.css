@@ -35,7 +35,7 @@
 	background: rgba(var(--primary-rgb), 0.05);
 	padding: 2.5rem;
 	border-radius: 20px;
-	border-left: 4px solid var(--primary);
+	border-left: 4px solid var(--subheading);
 	transition: transform 0.3s ease;
 	backdrop-filter: blur(10px);
 	border: 1px solid rgba(var(--primary-rgb), 0.1);
@@ -72,7 +72,7 @@
 .author-info h4 {
 	font-size: 1.1rem;
 	font-weight: 600;
-	color: var(--primary);
+	color: var(--heading);
 	margin-bottom: 0.3rem;
 }
 
@@ -90,7 +90,7 @@
 .clients-section h3 {
 	font-size: 1.8rem;
 	font-weight: 600;
-	color: var(--primary);
+	color: var(--heading);
 	margin-bottom: 2rem;
 }
 

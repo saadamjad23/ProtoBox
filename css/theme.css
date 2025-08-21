@@ -1,16 +1,27 @@
 /* Theme Variables */
 :root {
-	--bg-0: #000000;
-	--bg-1: #111111;
-	--bg-2: #1a1a1a;
+	--bg-0: #272727;
+	--bg-1: #2e2e2e;
+	--bg-2: #3a3a3a;
 	--text: #ffffff;
-	--text-muted: rgba(255, 255, 255, 0.8);
-	--primary: #ffd700;
-	--primary-2: #ffed4e;
+	--text-muted: rgba(255, 255, 255, 0.85);
+	--primary: #ffcf24;
+	--primary-2: #ffe060;
 	--primary-contrast: #000000;
-	--primary-rgb: 255, 215, 0;
+	--primary-rgb: 255, 207, 36;
 	--white-rgb: 255, 255, 255;
 	--black-rgb: 0, 0, 0;
+}
+
+/* Secondary accent (periwinkle from logo) */
+:root {
+	--secondary: #99acff; /* heading color */
+	--secondary-rgb: 165, 180, 255;
+}
+
+:root {
+	--heading: var(--secondary);
+	--subheading: #ffd21f;
 }
 
 /* Ocean (Cyan/Teal) */

@@ -107,12 +107,12 @@
 .member-info h3 {
 	font-size: 1.3rem;
 	font-weight: 600;
-	color: var(--primary);
+	color: var(--heading);
 	margin-bottom: 0.5rem;
 }
 
 .member-role {
-	color: var(--primary-2);
+	color: var(--subheading);
 	font-weight: 500;
 	margin-bottom: 1rem;
 }

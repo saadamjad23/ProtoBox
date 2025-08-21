@@ -112,7 +112,7 @@
 .portfolio-content h3 {
 	font-size: 1.3rem;
 	font-weight: 600;
-	color: var(--primary);
+	color: var(--heading);
 	margin-bottom: 1rem;
 }
 
@@ -129,13 +129,13 @@
 }
 
 .portfolio-tags span {
-	background: rgba(var(--primary-rgb), 0.1);
-	color: var(--primary);
+	background: rgba(var(--secondary-rgb), 0.1);
+	color: var(--heading);
 	padding: 0.3rem 0.8rem;
 	border-radius: 20px;
 	font-size: 0.9rem;
 	font-weight: 500;
-	border: 1px solid rgba(var(--primary-rgb), 0.3);
+	border: 1px solid rgba(var(--secondary-rgb), 0.3);
 }
 
 /* Responsive Portfolio */

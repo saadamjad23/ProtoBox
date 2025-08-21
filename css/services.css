@@ -68,7 +68,7 @@
 .service-icon {
     width: 100px;
     height: 100px;
-	background: linear-gradient(135deg, var(--primary), var(--primary-2), var(--primary), var(--primary-2));
+	background: linear-gradient(135deg, var(--secondary), var(--primary), var(--primary-2), var(--secondary));
     background-size: 200% 200%;
     border-radius: 25px;
     display: flex;
@@ -107,10 +107,10 @@
 }
 
 .service-card h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-	color: var(--primary);
-    margin-bottom: 1rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: var(--heading);
+	margin-bottom: 1rem;
 }
 
 .service-card p {
@@ -131,11 +131,11 @@
 }
 
 .service-card ul li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-	color: var(--primary);
-    font-weight: bold;
+	content: '✓';
+	position: absolute;
+	left: 0;
+	color: var(--subheading);
+	font-weight: bold;
 }
 
 /* Responsive Services */
