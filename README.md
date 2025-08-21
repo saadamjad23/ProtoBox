@@ -165,9 +165,9 @@ This project is open source and available under the [MIT License](LICENSE).
 ## 📞 Support
 
 For support or questions:
-- Email: hello@protobox.com
-- Phone: +1 (555) 123-4567
-- Website: [protobox.com](https://protobox.com)
+- Email: muhsaadk23@gmail.com
+- Phone: +92 307 9966105
+- Website: [protobox.com](https://saadamjad23.github.io/ProtoBox/)
 
 ## 🎉 Acknowledgments
 
